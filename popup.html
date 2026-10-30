@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sage X3 Environment Colors</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand-mark">X3</div>
+    <div><h1>Environment colors</h1><p>Choose a color for each Sage X3 environment.</p></div>
+  </header>
+  <main>
+    <div class="section-heading"><span>Environment rules</span><span class="hint">URL or header match</span></div>
+    <div id="rules" class="rules"></div>
+    <button id="addRule" class="add-button" type="button"><span>＋</span> Add environment</button>
+    <div class="note"><strong>How matching works</strong><p>The code is checked in the URL. The optional header text is checked against Sage X3's <code>data-s-endpoint</code> and visible endpoint label. Use semicolons to add multiple header aliases.</p></div>
+    <div id="status" class="status" role="status"></div>
+    <footer><button id="reset" class="secondary" type="button">Reset defaults</button><button id="save" class="primary" type="button">Save colors</button></footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
